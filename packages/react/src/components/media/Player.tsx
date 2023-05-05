@@ -86,7 +86,7 @@ export const PlayerInternal = <TPlaybackPolicyObject extends object>(
   React.useEffect(() => {
     setIsCurrentlyShown(_isCurrentlyShown);
   }, [_isCurrentlyShown]);
-
+  console.log('Source Sebastian: ', source);
   return (
     <MediaControllerProvider
       element={mediaElement}
@@ -125,7 +125,7 @@ export const PlayerInternal = <TPlaybackPolicyObject extends object>(
               left={
                 <>
                   <PlayButton />
-                  <Volume />
+                  {/*<Volume />*/}
                   <TimeDisplay />
                 </>
               }
